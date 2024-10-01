@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: '20.x'  # Use the Node.js version your Next.js app is using
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+  
       # Step 3: Install dependencies using pnpm
       - name: Install dependencies
         run: pnpm install
